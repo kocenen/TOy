@@ -1,23 +1,24 @@
 <template>
-    <div class = 'memo-app'>
-        <memo-form></memo-form>
-        <memo></memo>
-    </div>
+  <div class="memo-app">
+    Test Memo App
+    <MemoForm></MemoForm>
+    <!-- <MemoApp></MemoApp> -->
+  </div>
 </template>
 
 <script>
-import MemoForm from '@/components/MemoForm';
-import MemoApp from '@/components/MemoApp';
-    
+import MemoForm from "./MemoForm";
+// import MemoApp from "./MemoApp";
+
 export default {
-    name : 'MemoApp',
-    data(){
-        return{
-            memoArr: [],
-        };
-    },
-    created(){
-        this.memoArr = localStorage.memos? Json.parse(localStorage.memos) : [];
-    }
-}
+  name: "MemoApp",
+  data() {
+    return {
+      memoArr: []
+    };
+  },
+  created() {
+    this.memoArr = localStorage.memos ? Json.parse(localStorage.memos) : [];
+  }
+};
 </script>
