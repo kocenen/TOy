@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "git": "^0.1.5",
-    "npm": "^6.14.5",
+    "npm": "^6.14.6",
     "vue": "^2.5.11"
   },
   "browserslist": [
